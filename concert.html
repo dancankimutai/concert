@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concert</title>
+    <link href="concert.css" rel="stylesheet">
     <style>
         body{
        
@@ -14,11 +15,44 @@
         
         }
         button{background-color: #4CAF50;}
+        td{
+    padding: 6px;
+        }
+
         </style>
 </head>
     <body>
-        <h4>Concert</h4>
         
+
+         <!-- <script src="click.js"></script> -->
+
+        <table align="center" >
+            <tr>
+                <td>
+                    <h2>Concert</h2>
+                    <form id="Concert_Date" method="post" action="concert.php">
+    
+                        <label >Enter Conductor id:</label>
+                       <input type="text" name="conductor_id"><br><br>
+                       <label >Enter concert date:</label>
+                       <input type="date" name="concert_date"><br><br>
+                       <label >Enter Concert id:</label>
+                       <input type="text"  name="concert_id"><br><br>
+                       <button input type="submit">Submit</button>
+                   </form>
+                </td>
+                <td>
+                    <img src="concert4.jpeg" width="300" height="400">
+                </td>
+                <td>
+                    <img src="concert1.jpeg" width="300" height="400">
+                </td>
+                <td>
+                    <img src="concert3.jpeg"width="300" height="400">
+                </td>
+            </tr>
+            
+        </table>
         <form id="Concert_Date" method="post" action="concert.php">
     
             <label text-align: center>Enter concert Opening date</label><br>
@@ -32,5 +66,6 @@
             <button input type="submit">Submit</button>
         </form>
         <!-- <script src="click.js"></script> -->
+
 </body>
 </html>

@@ -14,19 +14,48 @@
         
         }
         button{background-color: #4CAF50;}
+        td{
+            padding: 6px;
+        }
         </style>
 </head>
 <body>
-    <form id="conductor" method="post" action="soloist.php">
+<form id="conductor" method="post" action="soloist.php">
         <label text-align: center>Enter soloist id</label><br>
-        <input type="text" id="soloist_name" name="soloist_id"> <br>
+        <input type="text" id="soloist_id" name="soloist_id"> <br>
         <label text-align: center>Enter soloist Name</label><br>
-        <input type="text" id="soloist_id" name="soloist_name"><br><br>
+        <input type="text" id="soloist_name" name="soloist_name"><br><br>
         <label text-align: center>Enter Composition Id</label><br>
-        <input type="text" id="soloist_id" name="composition_id"><br><br>
-        <button onclick="submit">Submit</button>
+        <input type="text" id="composition_id" name="composition_id"><br><br>
+ <label text-align: center>Enter Concert Id</label><br>
+        <input type="text" id="concert_id" name="concert_id"><br><br>
+       
+ <button onclick="submit">Submit</button>
         </form>
+
         <!-- <script src="click.js"></script> -->
+
+        <table>
+            <tr>
+                <td>
+                    <form id="conductor" method="post" action="soloist.php">
+                        <label text-align: center>Enter soloist id</label><br>
+                        <input type="text" id="soloist_id" name="soloist_id"> <br>
+                        <label text-align: center>Enter soloist Name</label><br>
+                        <input type="text" id="soloist_name" name="soloist_name"><br><br>
+                        <label text-align: center>Enter Composition Id</label><br>
+                        <input type="text" id="composition_id" name="composition_id"><br><br>
+                        <label text-align: center>Enter Concert Id</label><br>
+                        <input type="text" id="concert_id" name="concert_id"><br><br>
+                       
+                 <button onclick="submit">Submit</button>
+                        </form>
+                </td>
+            <td> <img src="soloist1.jpeg"width="300" height="400"></td>
+            <td> <img src="concert2.jpeg"width="300" height="400"></td>
+            <td> <img src="poster1.jpeg"width="300" height="400"></td>
+            </tr>
+        </table>
     
 </body>
 </html>
