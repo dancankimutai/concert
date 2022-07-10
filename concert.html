@@ -29,14 +29,16 @@
             <tr>
                 <td>
                     <h2>Concert</h2>
-                <form id="Concert_Date">
+                    <form id="Concert_Date" method="post" action="concert.php">
     
-                    <label text-align: center>Enter concert date</label><br>
-                    <input type="date" ><br><br>
-                    <label >Enter time:</label>
-                    <input type="time"><br><br>
-                    <button input type="submit">Submit</button>
-                </form>
+                        <label >Enter Conductor id:</label>
+                       <input type="text" name="conductor_id"><br><br>
+                       <label >Enter concert date:</label>
+                       <input type="date" name="concert_date"><br><br>
+                       <label >Enter Concert id:</label>
+                       <input type="text"  name="concert_id"><br><br>
+                       <button input type="submit">Submit</button>
+                   </form>
                 </td>
                 <td>
                     <img src="concert4.jpeg" width="300" height="400">
