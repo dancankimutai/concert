@@ -5,27 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Concert Season</title>
+    
     <style>
         body{
        
         margin-right: 00px;
         margin-left: 50px;
-        background-color:grey;
+        background-color:rgb(128, 128, 128);
         
         }
         button{background-color: #4CAF50;} 
+        td{
+            padding: 6px;
+            width: 25%;
+        }
+    #table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            height: 400px;
+            text-align: center;
+        }
     </style>
 
 </head>
 <body>
-    <h4>Concert season</h4>
     
-    <form>
+
+   <form method="post" action="concertseason.php">
 
         <label text-align: center>Enter opening date</label><br>
-        <input type="date" id="Opening_Date"><br>
+        <input type="date" id="Opening_Date" name="Opening_Date"><br>
         <button onclick="submit">Submit</button>
     </form>
+
     <!-- <script src="click.js"></script> -->
+    <table align="center">
+        <tr>
+            <td> 
+                <table id="table">
+                    <tr>
+                        <td>
+                            <h4>Concert season</h4>
+                            <form method="post" action="concertseason.php">
+
+                                <label text-align: center>Enter opening date</label><br>
+                                <input type="date" id="Opening_Date" name="Opening_Date"><br>
+                                <button onclick="submit">Submit</button>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td> <img src="season1.jpeg"width="300" height="400"></td>
+            <td> <img src="season2.jpeg"width="300" height="400"></td>
+            <td> <img src="season3.jpeg"width="300" height="400"></td>
+        </tr>
+    </table>
 </body>
 </html>
