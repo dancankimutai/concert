@@ -6,30 +6,51 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
     <style>
-ul{
-  list-style:none;
-  display:grid;
-  margin-left: 400px;
-  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-  justify-content:center;
-  width:25vw;
+        body{
+        background-color:grey;
+        }
+     table,th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
 
-}
-ul li{
-  padding:1em 2em .8em 2em;
-  border:1px solid black;
-
-}
+     }
     </style>
 </head>
 <body>
-    <ul id="date">
-        <li>Concertseason</li>
-        <li>Concert</li>
-        <li>Compositions</li>
-        <li>Conductor</li>
-        <li>Soloist</li>
+    <table style="width:100%">
+     <tr>
+        <th>Concertseasons</th>
+        <th>Concerts</th>
+        <th>Conductors</th>
+        <th>Soloists</th>
+        <th>Compositions</th>
+    </tr>
+    <tr>
+        <td>Opening date</td>
+        <td>Concert date</td>
+        <td>
+            <table style="border-spacing: 10px">
+            <td>Conductor Id</td>
+            <td>Conductor Name</td>
+            </table>
+        </td>
+        <td>
+            <table style="border-spacing: 10px">
+        <td>Soloist Name</td>
+        <td>Soloist ID</td>
+            </table>
+        </td>
+        <td>
+        <table style="border-spacing: 10px">
+        <td>Composer Name</td>
+        <td>Composition Name</td>
+        <td>Movement Name</td>
+        <td>Movement No</td>
+       </table>
+    </td>
+    </tr>
+    <!-- <tr></tr> -->
 
-    </ul>
+    </table>
 </body>
 </html>
